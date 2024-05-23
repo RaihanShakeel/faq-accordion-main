@@ -8,7 +8,7 @@ function toggleFAQ(icon, answer, question) {
     lastIcon.src = 'assets/images/icon-plus.svg';
     lastIcon.alt = 'Plus Icon';
     lastOpened.style.display = 'none';
-    question.style.color = 'hsl(292, 42%, 14%)';
+    
   }
 
   if (icon.src.includes('icon-plus.svg')) {
@@ -16,14 +16,13 @@ function toggleFAQ(icon, answer, question) {
     icon.alt = 'Minus Icon';
     answer.style.display = 'block';
     lastOpened = answer; // Update lastOpened to the current answer
-    question.style.color = 'hsl(223, 69%, 50%)'
     
   } else {
     icon.src = 'assets/images/icon-plus.svg';
     icon.alt = 'Plus Icon';
     answer.style.display = 'none';
     lastOpened = null; // Reset lastOpened as no answer is open now
-    question.style.color = 'hsl(292, 42%, 14%)';
+    
   }
 }
 
