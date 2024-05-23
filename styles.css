@@ -1,0 +1,156 @@
+
+@font-face{
+    font-family: WorkSans-Bold;
+    src: url('assets/fonts/static/WorkSans-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: WorkSans-SemiBold;
+    src: url('assets/fonts/static/WorkSans-SemiBold.ttf');
+}
+
+@font-face{
+    font-family: WorkSans-Regular;
+    src: url('assets/fonts/static/WorkSans-Regular.ttf');
+}
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    font-family: WorkSans-Regular, WorkSans-Semibold, WorkSans-Bold;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(275, 100%, 97%);
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    width: 38%;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.heading{
+    display: flex;
+    padding: 20px;
+    
+    
+}
+.heading h1{
+    font-family: WorkSans-Bold;
+    font-size: 2em;
+    margin-left: 20px;
+    color:hsl(292, 42%, 14%)
+    
+    
+}
+.heading img{
+    width: 30px;
+}
+
+.FAQ{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 10px;
+    margin-left: 20px;
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+
+.FAQ .qna h1{
+    font-family: WorkSans-SemiBold;
+    color:hsl(292, 42%, 14%);
+    font-size: 0.9em;
+}
+
+.FAQ .qna h1:hover{
+    cursor: pointer;
+    color: hsl(223, 69%, 50%);
+}
+
+.FAQ img{
+    width: 20px;
+}
+
+.FAQ #minus-toggle-icon{
+    display: none;
+}
+
+.FAQ .qna .answer{
+    margin-top: 20px;
+    color: hsl(292, 16%, 49%);
+    display: none;
+    font-size: 0.8em;
+}
+
+
+
+
+.attribution{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 2.5rem;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@media(max-width:375px){
+    body{
+        background-image: url('assets/images/background-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        font-family: WorkSans-Regular, WorkSans-Semibold, WorkSans-Bold;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(275, 100%, 97%);
+    }
+
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        width: 90%;
+        border: 2px solid black;
+        border-radius: 10px;
+    
+    }
+
+
+    
+
+}
+
+
+
+
+
+
+
+
